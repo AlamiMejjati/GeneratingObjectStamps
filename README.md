@@ -1,6 +1,6 @@
 # Generating Object Stamps
 
-This is the official code base for the paper: 'Generating object Stamps'. 
+This is the official code base for the paper:  [Generating object Stamps](https://arxiv.org/pdf/2001.02595.pdf). 
 It has been trained on python 3.7 on a ubuntu system with 2xGPU (GTX 1080ti).
 
 ![Alt text](./Images/teaser.png?raw=true "Teaser")
