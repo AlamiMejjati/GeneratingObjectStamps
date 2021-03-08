@@ -17,9 +17,6 @@ import sys
 import six
 from datetime import datetime
 
-'Learns the shape maniflod separately from the rest with a 256 resolution, ' \
-'A reconstruction loss on the image itself is added'
-'a global discriminator is used for the mask + a patch discrimnator is used for the texture'
 
 DIS_SCALE = 3
 SHAPE = 256
@@ -746,7 +743,7 @@ if __name__ == '__main__':
 
     # os.environ["CUDA_VISIBLE_DEVICES"] = args.nb_gpu
     nr_tower = max(get_num_gpu(), 1)
-    BATCH = BATCH * nr_tower
+    # BATCH = BATCH * nr_tower
     mod = sys.modules['__main__']
     basename = os.path.basename(mod.__file__).split('.')[0]
     logdir = os.path.join('train_log', args.dataset, basename, datetime.now().strftime("%Y%m%d-%H%M%S"))

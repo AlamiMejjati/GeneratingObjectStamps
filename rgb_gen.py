@@ -921,7 +921,7 @@ if __name__ == '__main__':
 
     # os.environ["CUDA_VISIBLE_DEVICES"] = args.nb_gpu
     nr_tower = max(get_num_gpu(), 1)
-    BATCH = BATCH * nr_tower
+    # BATCH = BATCH // nr_tower
     mod = sys.modules['__main__']
     basename = os.path.basename(mod.__file__).split('.')[0]
     logdir = os.path.join('train_log', args.dataset, basename, datetime.now().strftime("%Y%m%d-%H%M%S"))

@@ -10,14 +10,11 @@ This code has been trained on python 3.7 on a ubuntu system with 2xGPU (GTX 1080
 
 ### Install requirements
 
-Create a conda environment: 
- ``` conda create --name stamps python=3.7 ```
+Create a conda environment and install requirements: 
+ ```bash requirements.sh```
 
 Activate environment:
  ``` conda activate stamps ```
-
-Install requirements: 
-``` pip install -r requirements.txt```
 
 ### Create data and train
 To run the code, Follow the steps bellow:  
@@ -26,7 +23,7 @@ To run the code, Follow the steps bellow:
 
 + Create the training and validation data using the command below and replacing with the correct paths (Install pycocotools first ```conda install -c conda-forge pycocotools```).: 
 
-```python create_data.py --path /home/yam28/Documents/phdYoop/datasets/COCO --dataset giraffe --mode train```
+```python create_data.py Yo```
 
 and 
 

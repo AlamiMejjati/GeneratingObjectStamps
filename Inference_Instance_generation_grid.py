@@ -11,6 +11,7 @@ STYLE_DIM = 128
 STYLE_DIM_z2 = 8
 
 np.random.seed(0)
+os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 if __name__ == '__main__':
     # Let's allow the user to pass the filename as an argument
     parser = argparse.ArgumentParser()
