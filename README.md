@@ -11,9 +11,11 @@ This code has been trained on python 3.7 on a ubuntu system with 2xGPU (GTX 1080
 ### Install requirements
 
 Create a conda environment and install requirements: 
+
  ```bash requirements.sh```
 
 Activate environment:
+
  ``` conda activate stamps ```
 
 ### Create data and train
