@@ -24,7 +24,7 @@ To run the code, Follow the steps bellow:
 
 + Download the vgg_16.ckpt model from: https://drive.google.com/open?id=1jHkrz1Usp9JHylS6gtCcHuENcOcKbVAm
 
-+ Create the training and validation data using the command below and replacing with the correct paths (Install pycocotools first).: 
++ Create the training and validation data using the command below and replacing with the correct paths (Install pycocotools first ```conda install -c conda-forge pycocotools```).: 
 
 ```python create_data.py --path /home/yam28/Documents/phdYoop/datasets/COCO --dataset giraffe --mode train```
 
